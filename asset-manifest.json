@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/zahidshaik.dev/static/css/main.f473f781.css",
+    "main.js": "/zahidshaik.dev/static/js/main.08fa8f66.js",
+    "static/js/787.08deb14f.chunk.js": "/zahidshaik.dev/static/js/787.08deb14f.chunk.js",
+    "static/media/ou_logo.png": "/zahidshaik.dev/static/media/ou_logo.b9919512f636f163e5cc.png",
+    "static/media/amazon_logo.png": "/zahidshaik.dev/static/media/amazon_logo.fda9be764ac66c3e84b4.png",
+    "static/media/uhcl_logo.png": "/zahidshaik.dev/static/media/uhcl_logo.9c3abe352001705b6f86.png",
+    "static/media/bcn_logo.png": "/zahidshaik.dev/static/media/bcn_logo.caa727805419cee40673.png",
+    "static/media/Amazon.md": "/zahidshaik.dev/static/media/Amazon.6ab015f5f6a35f1a498a.md",
+    "index.html": "/zahidshaik.dev/index.html",
+    "static/media/BCM.md": "/zahidshaik.dev/static/media/BCM.6b7c6581076373a50e21.md",
+    "main.f473f781.css.map": "/zahidshaik.dev/static/css/main.f473f781.css.map",
+    "main.08fa8f66.js.map": "/zahidshaik.dev/static/js/main.08fa8f66.js.map",
+    "787.08deb14f.chunk.js.map": "/zahidshaik.dev/static/js/787.08deb14f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f473f781.css",
+    "static/js/main.08fa8f66.js"
+  ]
+}
