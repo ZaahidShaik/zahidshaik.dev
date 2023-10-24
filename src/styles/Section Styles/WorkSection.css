@@ -1,0 +1,67 @@
+.work-section-flex-container{
+    /* max-width: 1000px; */
+    display: flex;
+    gap: 35px;
+
+
+
+}
+
+.work-companies-list-flex-iteam{
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+
+}
+
+.company-name-button-list{
+    margin: 10px;
+}
+
+.work-company-card-deatils-flex-iteam{
+    margin: 5px;
+    padding: 5px;
+}
+
+
+/* MEDIA QUERIES */
+/* for DeskTops and Laptops Screen Viewports */
+@media (min-width: 1401px) {
+    .work-section-flex-container{
+        flex-direction: row;  
+    }
+    
+    .work-companies-list-flex-iteam{
+        flex-direction: column;
+    }
+
+
+  }
+  
+  /* for Tablets and IPads Screen Viewports */
+  @media (max-width: 1400px) {
+    .work-section-flex-container{
+        flex-direction: column;  
+    }
+    
+    .work-companies-list-flex-iteam{
+        flex-direction: row;
+    }
+
+  }
+  
+  /* for Mobile Screen Viewports */
+  @media (max-width: 480px) {
+    .work-section-flex-container{
+        flex-direction: column;  
+    }
+    
+    .work-companies-list-flex-iteam{
+        flex-direction: row;
+        margin: 5px;
+        align-content: center;
+        justify-content: left;
+    }
+
+  
+  }

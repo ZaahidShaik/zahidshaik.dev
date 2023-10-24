@@ -1,0 +1,17 @@
+.education-section-container{
+  max-height: 50vh;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.education-flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    min-height: 40vh;
+
+}

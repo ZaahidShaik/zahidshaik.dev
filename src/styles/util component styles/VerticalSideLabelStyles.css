@@ -1,0 +1,22 @@
+.section-side-title{
+    transform: rotate(-90deg) translate(-20%, -200%);
+    transform-origin: left top 0px;
+    white-space: nowrap;
+    color: var(--primary-blue);
+
+    /* color: rgb(28, 29, 42);  */
+    font-size: 0.865rem;
+    letter-spacing: 0.25em;
+    font-weight: bold;
+
+}
+
+.section-side-title::after{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 2.5em;
+    height: 1px;
+    margin-left: 0.5em;
+    background-color: currentcolor;
+}

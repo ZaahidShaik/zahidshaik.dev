@@ -1,0 +1,23 @@
+.projects-section-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.project-flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-self: center; */
+    justify-content: center;
+    margin: 5px;
+
+    /* width: 100% auto; */
+
+}
+
+
+.project-flex-items{
+    /* max-width: 400px; */
+    margin: 10px;
+}

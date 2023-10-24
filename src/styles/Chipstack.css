@@ -1,0 +1,11 @@
+.stack-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    max-width: 100%;
+    margin: 5px auto;
+}
+
+
+

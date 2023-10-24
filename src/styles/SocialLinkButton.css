@@ -1,0 +1,33 @@
+.diamond {
+    height: 55px;
+    width: 55px;
+    background-color: #757b9e;
+    transform: rotate(45deg);
+    transform-origin: 0 100%;
+
+    position: relative;
+    z-index: -1;
+
+
+  }
+
+.diamond_line_frame {
+    height: 60px;
+    width: 60px;
+    transform: rotate(45deg);
+    transform-origin: 0 100%;
+    border-style: solid;
+
+    /* position: absolute; */
+    z-index: 2;
+    margin-top: -70px;
+
+    /* display: flex;
+    justify-content: center; */
+
+    clip-path: polygon(0 0, 80% 0%, 100% 20%, 100% 100%, 20% 100%, 0% 80%);
+  }
+
+  .diamond_line_frame:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }

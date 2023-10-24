@@ -1,0 +1,153 @@
+/* .section-style{
+    font-size: 30px;
+}
+
+.sub-section-style{
+    font-size: 25px;
+} */
+
+.label-styles {
+    font-family: arial;
+    text-align: left;
+    text-transform: uppercase;
+    color: white;
+    
+    /* color: #101f3d; */
+    
+    /* display: flex;
+    justify-content: left; */
+
+}
+
+.divider-style{
+    border-bottom: 5px solid var(--primary-blue);
+}
+
+
+/* MEDIA QUERIES */
+/* for DeskTops and Laptops Screen Viewports */
+@media (min-width: 1101px) {
+    .label-styles {
+        margin-left: 15px ;
+     }
+ 
+    .section-style{
+        font-size: 33px;
+        font-weight: bold;
+        font-display:inherit;
+        max-width: max-content;
+        /* background-color: var(--primary-blue);  */
+        background-color: #101f3d;
+        border: 1px solid var(--primary-blue);
+        /* border-radius: 1px;
+        border-color: var(--primary-blue);
+        border-style: solid; */
+        padding: 0px 10px;
+        display: inline-block;
+
+    }
+
+    .icon-style{
+        display: inline-block;
+        text-align: center;
+        align-self: center;
+        font-size: 30px;
+        border: 2px solid var(--primary-blue);
+        margin-left: 5px;
+        margin-right: 0px;
+        background-color: var(--primary-blue);
+    }
+    
+    .sub-section-style{
+        font-size: 24px;
+        font-weight: bold;
+        font-display:inherit;
+    }
+    .divider-style{
+        /* display: inline-block; */
+        width: 50px;
+        margin-left: 10px ;
+        border-bottom: 1px solid var(--primary-blue);
+    }
+}
+
+/* for Tablets and IPads Screen Viewports */
+@media (max-width: 1100px) {
+    .label-styles {
+       margin-left: 15px ;
+    }
+
+    .section-style{
+        font-size: 24px;
+        font-weight: bold;
+        font-display:inherit;
+        background-color: #101f3d;
+        border: 1px solid var(--primary-blue);
+        padding: 0px 10px;
+        display: inline-block;
+    }
+    .icon-style{
+        display: inline-block;
+        text-align: center;
+        align-self: center;
+        font-size: 22px;
+        border: 1px solid var(--primary-blue);
+        margin-left: 5px;
+        margin-right: 0px;
+        background-color: var(--primary-blue);
+    }
+    
+  
+    .sub-section-style{
+        font-size: 20px;
+        font-weight: bold;
+        font-display:inherit;
+    }
+    .divider-style{
+        width: 40px;
+        margin-top: 5px ;
+        margin-left: 1px;
+        border-bottom: 4px solid var(--primary-blue);
+    }
+}
+
+/* for Mobile Screen Viewports */
+@media (max-width: 480px) {
+
+    .label-styles {
+       margin-left: 5px ;
+    }
+
+    .section-style{
+        font-size: 22px;
+        font-weight: bold;
+        font-display:inherit;
+        background-color: #101f3d;
+        border: 1px solid var(--primary-blue);
+        padding: 0px 10px;
+        display: inline-block;
+    }
+
+    .icon-style{
+        display: inline-block;
+        text-align: center;
+        align-self: center;
+        font-size: 20px;
+        border: 1px solid var(--primary-blue);
+        margin-left: 5px;
+        margin-right: 0px;
+        background-color: var(--primary-blue);
+    }
+    
+    .sub-section-style{
+        font-size: 18px;
+        font-weight: bold;
+        font-display:inherit;
+    }
+    .divider-style{
+        width: 40px;
+        margin-top: 5px ;
+        margin-left: 1px;
+        border-bottom: 4px solid var(--primary-blue);
+    }
+}

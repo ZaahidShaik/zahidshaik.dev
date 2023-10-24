@@ -1,0 +1,134 @@
+/* for DeskTops and Laptops Screen Viewports */
+@media (min-width: 1101px) {
+
+    .greeting_div{
+        padding: 20px;
+        text-align: left;
+    }
+
+    .greeting_style{
+        font-size: 61px;
+        font-weight: 700;
+        font-style: normal;
+        word-spacing: normal;
+        margin-bottom: 16px;
+        overflow-wrap: break-word;
+        max-width: 50%;
+    
+    }
+
+    .intro_style{
+        max-width: 60ch;
+        font-size: 25px;
+        font-weight: 400;
+        overflow-wrap: break-word;
+        box-sizing: border-box;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        max-width: 50%;
+
+    }
+
+    .intro_style2{
+        max-width: 55ch;
+        font-size: 25px;
+        font-weight: 400;
+        overflow-wrap: break-word;
+        box-sizing: border-box;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+
+
+
+
+/* Add Media queries */
+
+/* for Tablet and IPad Screen Viewports */
+@media (max-width: 1100px) {
+    .greeting_div{
+        /* margin-top: 150px;
+        margin-left: 140px; */
+        padding: 20px;
+        text-align: left;
+    }
+
+    .greeting_style{
+        font-size: 50px;
+        font-weight: 700;
+        font-style: normal;
+        word-spacing: normal;
+        margin-bottom: 16px;
+        overflow-wrap: break-word;
+        max-width: 100%;
+    }
+
+    .intro_style{
+        max-width: 60ch;
+        font-size: 20px;
+        font-weight: 400;
+        overflow-wrap: break-word;
+        box-sizing: border-box;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+
+    }
+
+    .intro_style2{
+        max-width: 55ch;
+        font-size: 20px;
+        font-weight: 400;
+        overflow-wrap: break-word;
+        box-sizing: border-box;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+
+
+/* for Mobile Screen Viewports */
+@media (max-width: 480px) {
+    .greeting_div{
+        /* margin-top: 150px;
+        margin-left: 10px; */
+        padding: 20px;
+        text-align: center;
+    }
+
+    .greeting_style{
+        font-size: 40px;
+        font-weight: 700;
+        font-style: normal;
+        word-spacing: normal;
+        margin-bottom: 16px;
+        max-width: 60ch;
+        overflow-wrap: break-word;
+
+    
+    }
+
+    .intro_style{
+        max-width: 60ch;
+        font-size: 18px;
+        font-weight: 400;
+        overflow-wrap: break-word;
+        box-sizing: border-box;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+    }
+
+    .intro_style2{
+        max-width: 55ch;
+        font-size: 18px;
+        font-weight: 400;
+        overflow-wrap: break-word;
+        box-sizing: border-box;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}

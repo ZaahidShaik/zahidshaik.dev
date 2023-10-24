@@ -1,0 +1,273 @@
+.workcard-container{
+    max-width: 80%;
+    padding: 10px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.image-comany-deatils-timeline-conatiner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    gap: 5rem;
+    justify-content: center;
+
+
+}
+
+.image-comany-details-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.company-logo{
+    /* border-color: #ffff;
+    border-width: 2px;
+    border-style:dotted; */
+    align-content: center;
+    padding: 3px;
+}
+
+.company-role-item{
+    align-content: center;
+    justify-content: start;
+    margin: 10px;
+}
+
+.org-title, .role-title{
+    color: var(--primary-blue);
+    text-transform: uppercase;
+    text-align: left;
+}
+
+
+
+.role-style{
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.location-style{
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #757b9e;
+    text-transform: uppercase;
+
+}
+
+.timeline-style{
+    min-width: 200px;
+    justify-content: center;
+    border-left-width: 2px;
+    border-left-color: #60b0cf;
+    border-left-style: solid;
+
+}
+
+.markdown-style{
+    font-size: 18px;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-content: center;
+    justify-content: center;
+    margin-top: 15px ;
+}
+
+
+/* MEDIA QUERIES */
+/* for Desktops and Laptops Screen Viewports */
+@media (min-width: 1401px) {
+
+    .workcard-container{
+        max-width: 80%;
+        padding: 10px;
+        margin: 15px;
+    }
+
+    .image-comany-deatils-timeline-conatiner{
+        max-width: 100%;
+        gap: 5rem;
+    }
+
+    .image-comany-details-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+    .org-title, .role-title{
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    .company-name{
+        font-size: 25px;
+        margin-top: 2px;
+    }
+
+    .role-style{
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+    .location-style{
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .markdown-style{
+        font-size: 18px;
+        max-width: 900px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-content: center;
+        justify-content: center;
+        margin-top: 15px ;
+    }
+
+  }
+  
+  /* for Tablets and IPads Screen Viewports */
+  @media (max-width: 1400px) {
+    .workcard-container{
+        max-width: 80%;
+        padding: 10px;
+        margin: 15px;
+    }
+
+    .image-comany-deatils-timeline-conatiner{
+        max-width: 100%;
+        gap: 5rem;
+    }
+
+    .image-comany-details-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .company-role-item{
+        align-content: center;
+        justify-content: start;
+        margin: 2px;
+    }
+    
+    .org-title, .role-title{
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    .company-name{
+        font-size: 25px;
+        margin-top: 2px;
+    }
+    
+
+    .role-style{
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+    .location-style{
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .markdown-style{
+        font-size: 18px;
+        max-width: 900px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-content: center;
+        justify-content: center;
+        margin-top: 15px ;
+    }
+
+
+  }
+  
+  /* for Mobile Screen Viewports */
+  @media (max-width: 480px) {
+    .workcard-container{
+        max-width: 100vw;
+        padding: 5px;
+        margin: 5px auto;
+    }
+
+    .image-comany-deatils-timeline-conatiner{
+        /* max-width: 100vw; */
+        gap: 1rem;
+    }
+
+    .image-comany-details-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 350px;
+    }
+
+    .company-role-item{
+        margin: auto 10px;
+    }
+
+
+    .company-logo{
+        padding: 1px;
+    }
+
+    .org-title, .role-title{
+        font-size: 11px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .company-name{
+        font-size: 20px;
+        margin-top: 1px;
+    }
+
+    .role-style{
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+    .location-style{
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+    .timeline-style{
+        max-width: 100vw;
+        max-height: 50px;
+        justify-content: center;
+        border-left-width: 1px;
+        margin-bottom: 90px;
+    }
+
+    .markdown-style{
+        font-size: 14px;
+        max-width: 900px;
+        margin-top: 15px ;
+    }
+
+  }

@@ -1,0 +1,56 @@
+.logo-styles{
+    margin: 05px;
+    padding: 15px;
+    font-family: Serif;
+    text-align: center;
+
+    /* font-size: 70px;
+    line-height: 12px; */
+     /* 0px if you want to overlaps completly */
+
+}
+.z-logo-container{
+    position: relative;
+    font-style:normal;
+    font-weight:200;
+    /* color:#d5dde2; */
+    color: var(--white);
+
+}
+.s-logo-container{
+    position: relative;
+    z-index: 1;
+    font-weight:300;
+    /* color:#599fce; */
+    color: var(--logo-blue);
+
+
+}
+
+
+/* MEDIA QUERIES */
+/* for DeskTops and Laptops Screen Viewports */
+@media (min-width: 1101px) {
+    .logo-styles{
+        font-size: 70px;
+        line-height: 12px;
+    }
+}
+
+/* for Tablets and IPads Screen Viewports */
+@media (max-width: 1100px) {
+    .logo-styles{
+        font-size: 60px;
+        line-height: 10px;
+    }
+}
+
+/* for Mobile Screen Viewports */
+@media (max-width: 480px) {
+    .logo-styles{
+        font-size: 60px;
+        line-height: 10px;
+        display: flex;
+        justify-content: center;
+    }
+}

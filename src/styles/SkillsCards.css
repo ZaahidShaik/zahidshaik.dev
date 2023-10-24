@@ -1,0 +1,128 @@
+.skills-flex-items-cards{
+    /* margin-left: 25px; */
+    margin: 30px;
+    margin-left: 60px;
+    font-size: 20px;
+    font-family: arial;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.skill-stack-container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.stack-name-flex{
+
+}
+
+.stack-technologies-list-flex{
+
+}
+
+.stack-subsection-technologies-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.subsection-tech-box{
+    margin: 15px;
+    text-align: left;
+    margin-left: 25px;
+}
+.section-name{
+    color: var(--primary-blue);
+    text-transform: uppercase;
+
+}
+
+.technologies-list-box{
+    margin: 5px;
+    margin-left: 50px;
+    text-align: left;
+}
+
+/* MEDIA QUERIES */
+/* for DeskTops and Laptops Screen Viewports */
+@media (min-width: 1101px) {
+
+    .skill-stack-container{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin: 15px;
+    }
+
+    .stack-name-flex{
+     
+    }
+    
+    .stack-technologies-list-flex{
+        margin: 5px;
+    
+    }
+    
+    .stack-subsection-technologies-flex{
+        margin: 15px;
+
+    }
+    
+    
+}
+
+/* for Tablets and IPads Screen Viewports */
+@media (max-width: 1100px) {
+    .skill-stack-container{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin: 15px;
+    }
+
+    .stack-name-flex{
+
+    }
+    
+    .stack-technologies-list-flex{
+    
+    }
+    
+    .stack-subsection-technologies-flex{
+        margin: 15px;
+
+    }
+    
+}
+
+/* for Mobile Screen Viewports */
+@media (max-width: 480px) {
+
+    .skill-stack-container{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin: 5px;
+    }
+
+    .stack-name-flex{
+
+    }
+    
+    .stack-technologies-list-flex{
+    
+    }
+    
+    .stack-subsection-technologies-flex{
+        margin-top: 5px;
+        margin-left: 0px;
+
+    }
+}

@@ -1,0 +1,38 @@
+.mobile-navbar-styles{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    position: fixed;
+    justify-content: center;
+    bottom: 0;
+
+
+}
+
+.mobile-navbar-styles div {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    /* font-size: 12px; */
+}
+
+.mobile-navbar-styles div:hover {
+    color: var(--primary-blue);
+  }
+
+
+  .mobile-navbar-styles div.active {
+    color: var(--primary-blue);
+  }
+
+  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .mobile-navbar-styles {
+      -webkit-backdrop-filter: blur(50px);
+      backdrop-filter: blur(50px);
+    }
+  }
+
+  
