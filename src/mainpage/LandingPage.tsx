@@ -68,12 +68,12 @@ function LandingPage() {
       {/* {width} x {height} */}
 
 
-     {isMobileDevice && 
+     {/* {isMobileDevice && 
     <div className='mobile-navbar-styles'>
     {NavbarItemsList.map((navItems :any, index: number) => {
         return <div  key={index}><MobileNavbar buttonType={navItems}/></div>
       })}
-    </div> }
+    </div> } */}
 
 
     <div className="page-section-container">
