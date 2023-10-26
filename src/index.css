@@ -4,6 +4,7 @@
   --logo-blue: #599fce;
   --primary-blue: #60b0cf;
   --black: #1f1f1f;
+  --background-dark-blue: #23345c;
 
   --chips-colors: #7a95b7;
   --card-divider-color: #7a95b7;
@@ -14,6 +15,9 @@
   --desktop-font-size: ;
   --ipad-font-size: ;
   --mobile-font-size: ;
+
+  scrollbar-color: var(--background-dark-blue) var(--black);
+  scrollbar-width: thin;
 }
 
 body {
@@ -29,19 +33,43 @@ body {
   padding: 15px;
   scroll-behavior: smooth;
   scrollbar-color: var(--primary-blue) var(--black);
+  scrollbar-color: inherit;
   scrollbar-width: thin;
 }
 
 ::-webkit-scrollbar {
   width: 8px;
-  height: 8px;
-  background-color: white;
+  /* height: 15px; */
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-track  {
+  background-color: var(--black);
+  width: 8px;
+
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  border-radius: 10px;
+  background-color: var(--background-dark-blue);
+}
+
+/* ::-webkit-scrollbar{
+  width: 5px;
+  background: black;
+}
+
+::-webkit-scrollbar-track{
+  background: black;
+}
+
+::-webkit-scrollbar-thumb{
+  background: red;
+} */
+
+/* ::-webkit-scrollbar-thumb {
   background: blue;
   border-radius: 5px;
-}
+} */
 
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

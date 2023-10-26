@@ -4,6 +4,8 @@ import SkillsCards from '../components/SkillsCards';
 import { skillTypes } from '../persistance_store/skills';
 import {Button, ButtonGroup} from '@mui/material';
 
+import '../styles/util component styles/MobileTabBar.css'
+
 
 interface props{
      skillsList: skillTypes[],
@@ -13,6 +15,25 @@ interface props{
 const SkillsSection = ({skillsList, screenWidth} : props) => {
 
     const [stackDetails, setStackDetails] = useState(skillsList[0]); 
+
+    const MobileTabBar = (skillsList :skillTypes[])  => {
+      return (
+        <>
+        <div className='tab-divider-style  carousel-container flex-container'>
+               <div className="tab-carousel-wrapper swiper-slide">
+                  { skillsList.map((tabDetail: skillTypes, index: number) => {
+                     return <div key={index} className= {`tab-carousel-btn ${isActiveTab(tabDetail.stackName) ? "is-active": " "}`}
+                     onClick={() => {setStackDetails(tabDetail)}}>{tabDetail.stackName}</div>
+                  })}  
+                </div>
+        </div>
+        </>
+      )
+    }
+
+    const isActiveTab = ( currentTab :String) =>{
+       return (currentTab === stackDetails.stackName); 
+    }
 
   
     const SelectButtonGroup = ( screenWidth: number, skillsList :skillTypes[]) => {
@@ -26,7 +47,9 @@ const SkillsSection = ({skillsList, screenWidth} : props) => {
                 
         } else if (screenWidth <= 480) {
             // {/* when for isMovile */}
-            return RenderButtonGroup("small", 14,"100px",skillsList);
+            // return RenderButtonGroup("small", 14,"100px",skillsList);
+
+            return MobileTabBar(skillsList);
 
        
         }
@@ -54,6 +77,7 @@ const SkillsSection = ({skillsList, screenWidth} : props) => {
       My Skills
     </div>
     <SectionLabels labeltext='Tech Stacks' labelType='Section' id="skills"/>
+
 
 
      <div className="group-button-container">

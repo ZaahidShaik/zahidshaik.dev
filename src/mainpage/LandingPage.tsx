@@ -2,16 +2,13 @@ import React, { useEffect, useState } from 'react'
 import '../styles/LandingPage.css'
 import '../styles/Section Styles/SkillsSection.css'
 import '../styles/Section Styles/ProjectSection.css'
-
-
 import '../styles/component styles/MobileNavbar.css'
 
-
+import { Routes, Route} from "react-router-dom";
 
 import Greeting from '../components/Greeting'
 import Navbar from '../components/Navbar'
 import { tabList } from '../persistance_store/tabs'
-import SectionLabels from '../components/SectionLabels'
 import { skillsList } from '../persistance_store/skills'
 import RedirectButtons from '../components/RedirectButtons'
 import { social } from '../persistance_store/social'
@@ -25,7 +22,8 @@ import WorkSection from '../sections_modules/WorkSection'
 import SkillsSection from '../sections_modules/SkillsSection'
 import ProjectsSection from '../sections_modules/ProjectsSection'
 import EducationSection from '../sections_modules/EducationSection'
-import VerticalSideLabel from '../components/Until/VerticalSideLabel'
+import MobileTabBar from '../components/Until/MobileTabBar'
+
 
 
 function LandingPage() {
@@ -75,14 +73,17 @@ function LandingPage() {
       })}
     </div> } */}
 
-
+   
     <div className="page-section-container">
+    
 
-
-
-
+    
+    
    {/* Hero Greeting section */}
    {isMobileDevice && <div className='mobile-logo-style'><Logo/></div> }
+
+   {/* <Routes> */}
+   {/* <Route path="/" element={  */}
    <div className='hero-page-section' id = "home">
 
     
@@ -95,19 +96,28 @@ function LandingPage() {
     </div>
 
     </div>
+   {/* } />  */}
 
-
+  
     {/* Skills Section */}
+    {/* <Route path="/skills" element={ */}
     <SkillsSection skillsList={skillsList} screenWidth={width}/>
+     {/* } /> */}
 
 
    
     {/* Projects */}
+    {/* <Route path="/projects" element={ */}
     <ProjectsSection projectList={projectList} screenWidth={width}/>
+ {/* } /> */}
+    
 
 
     {/* Education Section */}
+    {/* <Route path="/education" element={ */}
     <EducationSection educationList={educationList} screenWidth={width}/>
+    {/* } /> */}
+    
 {/* 
     <SectionLabels labeltext='Education' labelType='Section' id= "education"/>
     <div className='project-flex-container'>
@@ -118,20 +128,27 @@ function LandingPage() {
 
    
     {/* Work Section */}
-    <VerticalSideLabel labelText={'My Work'}/>
-    <SectionLabels labeltext='Work' labelType='Section' id="work"/>
-    <div className='project-flex-container'>
+
+    {/* <div className='project-flex-container'> */}
      {/* {workList.map((work :workType, index: number) => {
       return <div className='' key={index}><WorkCards work={work}/></div>
      })} */}
-
+     
+     {/* <Route path="/work" element={ */}
      <WorkSection workHistry={workList} screenWidth={width}/>
-    </div>
+     
+     {/* }  /> */}
+
+     {/* </Routes> */}
+     
+    {/* </div> */}
 
    
    
 
     </div>
+
+
    
     </div>
   )

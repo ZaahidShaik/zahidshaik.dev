@@ -8,7 +8,44 @@
     margin: 0;
 }
 
+/* ::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: rgb(28, 24, 24);
+  } */
 
+/* ::-webkit-scrollbar{
+    width: 5px;
+    background: black;
+  }
+
+  ::-webkit-scrollbar-track{
+    background: black;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background: red;
+  } */
+
+
+  .scroller {
+    overflow-y: scroll;
+    scrollbar-color: #0A4C95 #C2D2E4;
+  }
+  
+  .scroller::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .scroller::-webkit-scrollbar-track-piece  {
+    background-color: #C2D2E4;
+  }
+  
+  .scroller::-webkit-scrollbar-thumb:vertical {
+    height: 30px;
+    background-color: #0A4C95;
+  }
 
 /* MEDIA QUERIES */
 /* for DeskTops and Laptops Screen Viewports */

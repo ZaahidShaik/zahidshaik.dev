@@ -4,27 +4,27 @@ import { navBarList } from "../models/models";
 export const tabList: navBarList[] = [
     {
         tabName: 'Home',
-        tabLink: '/home'
+        tabLink: "/"
     },
     {
         tabName: 'Featured',
-        tabLink: '/featured'
+        tabLink: "/featured"
     },
     {
         tabName: 'Projects',
-        tabLink: '/projects'
+        tabLink: "/projects"
     },
     {
         tabName: 'Skills',
-        tabLink: '/skills'
+        tabLink: "/skills"
     },
     {
         tabName: 'Work',
-        tabLink: '/work'
+        tabLink: "/work"
     },
     {
         tabName: 'Education',
-        tabLink: '/education'
+        tabLink: "/education"
     },
 
 ]

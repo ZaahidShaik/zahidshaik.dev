@@ -6,6 +6,8 @@ import { Button } from '@mui/material';
 // import { ThemeProvider, createTheme } from '@mui/system';
 
 import '../styles/Section Styles/WorkSection.css'
+import VerticalSideLabel from '../components/Until/VerticalSideLabel';
+import SectionLabels from '../components/SectionLabels';
 // import VerticalSideLabel from '../components/Until/VerticalSideLabel';
 
 interface props{
@@ -45,7 +47,7 @@ const WorkSection = ({workHistry, screenWidth} : props) => {
              return <Button color='inherit' size="small" variant="outlined" onClick={() => {handleCompanyDetails(work)}}   sx={theme}
              style={{textTransform: 'none',   fontSize: 16,   borderColor: '#60b0cf', width:'120px'}}>{work.componyName}</Button>
         } else if (screenWidth <= 480) {
-            // {/* when for isMovile */}
+            // {/* when for isMobile */}
             return <Button color='inherit' size="small" variant="outlined"  onClick={() => {handleCompanyDetails(work)}} sx={theme}
             style={{textTransform: 'none',   fontSize: 12,   borderColor: '#60b0cf', width:'100px'}}>{work.componyName}</Button>
        
@@ -54,8 +56,15 @@ const WorkSection = ({workHistry, screenWidth} : props) => {
 
   return (
     <>
+    <div className="work-section-container">
+
+    <VerticalSideLabel labelText={'My Work'}/>
+    <SectionLabels labeltext='Work Experience' labelType='Section' id="work"/>
+
     <div className='work-section-flex-container'>
-    <div className="work-companies-list-flex-iteam"> Company
+    <div className="org-title">Company</div>
+
+    <div className="work-companies-list-flex-iteam">
     {/* <ThemeProvider theme={theme}> */}
     {workHistry.map((work :workType, index: number) => {
       return  <div className="company-name-button-list" key={index}> 
@@ -63,10 +72,11 @@ const WorkSection = ({workHistry, screenWidth} : props) => {
      })}
      {/* </ThemeProvider> */}
     </div>
+
     <div className="work-company-card-deatils-flex-iteam">
-    Details    
     <WorkCards work={compantDeatils} screenWidth={screenWidth}/>
     </div>      
+    </div>
     </div>
     </>
   )

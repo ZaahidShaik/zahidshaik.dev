@@ -7,7 +7,7 @@ export interface socialMedian
 export interface navBarList 
 {
     tabName: String,
-    tabLink: String
+    tabLink: string
 }
 
 

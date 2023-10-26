@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../styles/Navbarstyle.css';
 import { navBarList } from '../models/models';
 import Logo from './Logo';
+import { Link } from "react-router-dom"
 // import { log } from 'console';
 
 
@@ -54,7 +55,11 @@ const Navbar = ({ tabList}: props) => {
      <nav>
         <ul className='nav_list'> {showNavbar}
             {tabList.map((navItem:any, index:number) => {
-                return <a className='nav_item' key={index} href={navItem.tabLink}>{navItem.tabName}</a>
+              //  return <Link key={index} to={navItem.tabLink}>{navItem.tabName}</Link>
+                // return <a className='nav_item' key={index} href={navItem.tabLink}>{navItem.tabName}</a>
+
+                return <a className='nav_item' key={index}>
+                       <Link to={navItem.tabLink}>{navItem.tabName}</Link></a>
             })}
         </ul>
      </nav>

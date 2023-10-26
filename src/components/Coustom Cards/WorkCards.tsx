@@ -19,6 +19,7 @@ const WorkCards = ({work, screenWidth} : props) => {
     
   return (
     <div className="workcard-container">
+        <div className="org-title">Details</div>
     
         <div className='image-comany-deatils-timeline-conatiner'>
 
@@ -26,13 +27,16 @@ const WorkCards = ({work, screenWidth} : props) => {
                 {/* Layout for row 1: Company Logo*/}
                 <div className="company-logo">
                 {/* for Desktops */}
-                {screenWidth >= 1101 && <img src={company_logo} alt="company_logo" style={{width: '110px', height: '140px',  alignContent: 'center', borderWidth: '1px', borderStyle: 'solid', borderColor: '#ffff', marginTop: '5px'}} />}    
+                {screenWidth >= 1101 && <img src={company_logo} alt="company_logo" 
+                style={{width: '110px', height: '140px',  alignContent: 'center', borderWidth: '1px', borderStyle: 'solid', borderColor: '#ffff', marginTop: '5px'}} />}    
                 
                 {/* for Tables|| IPads */}
-                {screenWidth <= 1100 && screenWidth >= 481 && <img src={company_logo} alt="company_logo" style={{width: '100px', height: '130px',  alignContent: 'center', borderWidth: '1px', borderStyle: 'solid', borderColor: '#ffff', marginTop: '5px'}} />}    
+                {screenWidth <= 1100 && screenWidth >= 481 && <img src={company_logo} alt="company_logo" 
+                style={{width: '100px', height: '130px',  alignContent: 'center', borderWidth: '1px', borderStyle: 'solid', borderColor: '#ffff', marginTop: '5px'}} />}    
                 
                 {/* for Mobile */}
-                {screenWidth <= 480 && <img src={company_logo} alt="company_logo" style={{width: '90px', height: '120px', alignContent: 'center', borderWidth: '1px', borderStyle: 'solid', borderColor: '#ffff', marginTop: '5px'}} />}
+                {screenWidth <= 480 && <img src={company_logo} alt="company_logo" 
+                style={{width: '90px', height: '120px', alignContent: 'center', borderWidth: '1px', borderStyle: 'solid', borderColor: '#ffff', marginTop: '5px'}} />}
                 </div>
 
                 {/* Layout for row 2: Company Details and Role Details */}
