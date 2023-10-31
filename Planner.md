@@ -79,3 +79,10 @@
 - How to handle Div overlap.
 - Div Notche with hover.
 -
+
+
+### Panding features:
+- Animations
+- work card redesign
+- Project more button
+- Project filter by cetagory.

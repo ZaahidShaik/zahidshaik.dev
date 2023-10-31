@@ -30,7 +30,7 @@ export interface workType
 
 export const workList: workType[] = [
     {
-        componyName: 'Peapod Digital Labs',
+        componyName: 'Meraki Solutions',
         roleTitle: 'Full Stack Java Developer',
         location: 
         {
@@ -59,7 +59,7 @@ export const workList: workType[] = [
         },
         endDate: 
         {
-            month: 'March',
+            month: 'October',
             year: 2023,
        },
        roleGuidMDName: 'Amazon.md',
@@ -103,7 +103,7 @@ export const workList: workType[] = [
     },
     {
         componyName: 'Baylor College of Medicine',
-        roleTitle: 'Full Stack Web Developer',
+        roleTitle: 'Full Stack Web Developer (Capstone)',
         location: 
         {
             city: 'Houston',

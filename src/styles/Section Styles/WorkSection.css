@@ -1,3 +1,7 @@
+.work-section-container{
+    scrollbar-width: none;
+}
+
 .work-section-flex-container{
     /* max-width: 1000px; */
     display: flex;
@@ -6,6 +10,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 5px;
+
 }
 
 .work-companies-list-flex-iteam{
@@ -23,6 +28,98 @@
     margin: 5px;
     padding: 5px;
 }
+
+/* carousel css */
+
+/* .tab-divider-style{
+    border-top: 1px solid var(--primary-blue);
+    border-bottom: 1px solid var(--primary-blue);
+} */
+
+.work-flex-container{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.work-carousel-container{
+    width: 100%;
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0px;
+    z-index: 1;
+
+
+}
+
+
+.tab-carousel-wrapper{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+    position: relative;
+}
+
+.tab-carousel-btn{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    overflow: visible;
+    cursor: pointer;
+
+    padding: 16px 12px;
+    white-space: nowrap;
+    border: 0px;
+
+    color: white;
+    font-weight: 600;
+}
+
+
+::-webkit-scrollbar{
+    height: 0;
+    width: 0;
+}
+
+
+.isHidden {
+    display: none;
+}
+
+.isImageActive {
+    transform: scale(1.3);
+}
+
+
+.company-name-short-card{
+    z-index: 2;
+    background: black;
+    line-height: -15px;
+    text-align: end;
+    align-content: center;
+    width: 200px;
+    height: 100px;
+}
+
+
+.image-container img {
+    transition:  0.5s ease;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+
+
+
 
 
 /* MEDIA QUERIES */
