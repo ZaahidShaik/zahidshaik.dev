@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.32eb8f74.css",
-    "main.js": "/static/js/main.30be7de7.js",
-    "static/js/651.449328c7.chunk.js": "/static/js/651.449328c7.chunk.js",
+    "main.js": "/static/js/main.925f7177.js",
+    "static/js/787.08deb14f.chunk.js": "/static/js/787.08deb14f.chunk.js",
     "static/media/ou_logo.png": "/static/media/ou_logo.b9919512f636f163e5cc.png",
     "static/media/amazon_logo.png": "/static/media/amazon_logo.fda9be764ac66c3e84b4.png",
     "static/media/uhcl_logo.png": "/static/media/uhcl_logo.9c3abe352001705b6f86.png",
@@ -11,11 +11,11 @@
     "index.html": "/index.html",
     "static/media/BCM.md": "/static/media/BCM.6b7c6581076373a50e21.md",
     "main.32eb8f74.css.map": "/static/css/main.32eb8f74.css.map",
-    "main.30be7de7.js.map": "/static/js/main.30be7de7.js.map",
-    "651.449328c7.chunk.js.map": "/static/js/651.449328c7.chunk.js.map"
+    "main.925f7177.js.map": "/static/js/main.925f7177.js.map",
+    "787.08deb14f.chunk.js.map": "/static/js/787.08deb14f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.32eb8f74.css",
-    "static/js/main.30be7de7.js"
+    "static/js/main.925f7177.js"
   ]
 }
