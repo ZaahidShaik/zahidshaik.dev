@@ -84,6 +84,7 @@ function LandingPage() {
 
    {/* <Routes> */}
    {/* <Route path="/" element={  */}
+   <section id='home'>
    <div className='hero-page-section' id = "home">
 
     
@@ -96,55 +97,47 @@ function LandingPage() {
     </div>
 
     </div>
+    </section>
    {/* } />  */}
 
   
     {/* Skills Section */}
     {/* <Route path="/skills" element={ */}
+    <section id='skills'>
     <SkillsSection skillsList={skillsList} screenWidth={width}/>
+    </section>
      {/* } /> */}
 
 
    
     {/* Projects */}
     {/* <Route path="/projects" element={ */}
+    <section id='projects'>
     <ProjectsSection projectList={projectList} screenWidth={width}/>
- {/* } /> */}
+    </section>
+    {/* } /> */}
     
 
 
     {/* Education Section */}
     {/* <Route path="/education" element={ */}
+    <section id='education'>
     <EducationSection educationList={educationList} screenWidth={width}/>
+    </section>
     {/* } /> */}
-    
-{/* 
-    <SectionLabels labeltext='Education' labelType='Section' id= "education"/>
-    <div className='project-flex-container'>
-    {educationList.map((education :any, index: number) => {
-      return <div className='project-flex-items' key={index}><EducationCrad education={education} screenWidth={width}/></div>
-    })}
-    </div> */}
 
    
     {/* Work Section */}
-
-    {/* <div className='project-flex-container'> */}
-     {/* {workList.map((work :workType, index: number) => {
-      return <div className='' key={index}><WorkCards work={work}/></div>
-     })} */}
-     
      {/* <Route path="/work" element={ */}
-     <WorkSection workHistry={workList} screenWidth={width}/>
+     <section id='work'>
+     <WorkSection workHistory={workList} screenWidth={width}/>
+     </section>
      
      {/* }  /> */}
 
      {/* </Routes> */}
      
-    {/* </div> */}
 
-   
-   
 
     </div>
 
