@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a6a946fe.css",
-    "main.js": "/static/js/main.7d9032aa.js",
+    "main.css": "/static/css/main.32eb8f74.css",
+    "main.js": "/static/js/main.30be7de7.js",
     "static/js/651.449328c7.chunk.js": "/static/js/651.449328c7.chunk.js",
     "static/media/ou_logo.png": "/static/media/ou_logo.b9919512f636f163e5cc.png",
     "static/media/amazon_logo.png": "/static/media/amazon_logo.fda9be764ac66c3e84b4.png",
@@ -10,12 +10,12 @@
     "static/media/Amazon.md": "/static/media/Amazon.6ab015f5f6a35f1a498a.md",
     "index.html": "/index.html",
     "static/media/BCM.md": "/static/media/BCM.6b7c6581076373a50e21.md",
-    "main.a6a946fe.css.map": "/static/css/main.a6a946fe.css.map",
-    "main.7d9032aa.js.map": "/static/js/main.7d9032aa.js.map",
+    "main.32eb8f74.css.map": "/static/css/main.32eb8f74.css.map",
+    "main.30be7de7.js.map": "/static/js/main.30be7de7.js.map",
     "651.449328c7.chunk.js.map": "/static/js/651.449328c7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6a946fe.css",
-    "static/js/main.7d9032aa.js"
+    "static/css/main.32eb8f74.css",
+    "static/js/main.30be7de7.js"
   ]
 }
