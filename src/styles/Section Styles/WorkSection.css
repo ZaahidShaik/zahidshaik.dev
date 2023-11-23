@@ -2,32 +2,21 @@
     scrollbar-width: none;
 }
 
-.work-section-flex-container{
-    /* max-width: 1000px; */
-    display: flex;
-    gap: 35px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 5px;
 
-}
-
+/* 
 .work-companies-list-flex-iteam{
     display: flex;
     margin: 10px;
     padding: 5px;
 
-}
+} */
 
 .company-name-button-list{
     margin: 10px;
 }
 
-.work-company-card-deatils-flex-iteam{
-    margin: 5px;
-    padding: 5px;
-}
+
+
 
 /* carousel css */
 
@@ -96,9 +85,26 @@
 }
 
 .isImageActive {
-    transform: scale(1.3);
+    transform: scale(1.4);
 }
 
+.isActive{
+    /* transform: scale(1.1); */
+    /* color: var(--primary-blue) */
+}
+
+.isDisabled { 
+    color: #757b9e;
+
+}
+
+.isShowing{
+    clip-path: polygon(12% 0%, 60% 0%, 81.15% 0%, 100% 0%, 100% 60%, 90% 100%, 60.06% 100%, 12% 100%, 0% 100%, 0% 0%);
+    border: 2px solid var(--primary-blue);
+    /* border-right: 0px; */
+    font-size: 20px;
+    border-right: 5px solid var(--primary-blue);
+}
 
 .company-name-short-card{
     z-index: 2;
@@ -118,47 +124,412 @@
 }
 
 
+/* New card section */
+
+
+
+
+.work-section-flex-container{
+    display: flex;
+    /* gap: 35px; */
+    flex-wrap: wrap;
+    margin: 5px;
+
+    max-width: 80vw;
+    min-height: 40vh;
+}
+
+/* Nav buttons */
+
+.company-title{
+    color: #757b9e;
+    text-transform: uppercase;
+}
+
+.work-nav-name-container{
+    max-width: 25%;
+}
+
+
+
+.company-name-nav-btns{
+    margin: 10px;
+    padding: 5px;
+
+
+    transition:  0.2s ease;
+    transform: scale(1);
+    cursor: pointer;
+
+}
+
+.company-name-outer-layer{
+    clip-path: polygon(12% 0%, 60% 0%, 81.15% 0%, 100% 0%, 100% 60%, 90% 100%, 60.06% 100%, 12% 100%, 0% 100%, 0% 0%);
+    background-color: var(--primary-blue);
+    padding: 1px;
+    border: 2px solid var(--primary-blue);
+
+
+}
+
+.company-name-inner-layer{
+    clip-path: polygon(80% 0%, 85% 10%, 100% 10%, 100% 60%, 90% 100%, 30% 100%, 20% 90%, 0% 90%, 0% 0%);
+    background-color: #101f3d;
+    font-weight: 700;
+
+    padding: 0.8rem;
+    font-size: 18px;
+}
+
+
+
+
+/* Timeline */
+
+.work-timeline{
+    justify-content: center;
+    margin: auto auto;
+}
+
+
+
+.rv-work-duty-tech-section{
+    max-width: 100vw;
+    
+}
+
+.tab-label-container{
+    max-width: 90vw;
+    margin: 10px auto;
+}
+
+/* Layout for card area */
+
+.work-card-section{
+    display: flex;
+    flex-direction: row;        
+    /* justify-content: center; */
+}
+.card-id-section{
+    justify-content: start;
+
+    margin: 25px;
+    font-size: 40px;
+}
+
+.work-card-details{
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 
 
 
 /* MEDIA QUERIES */
-/* for DeskTops and Laptops Screen Viewports */
+/* for DeskTops and Laptops Screen Viewport */
 @media (min-width: 1401px) {
     .work-section-flex-container{
-        flex-direction: row;  
-    }
-    
-    .work-companies-list-flex-iteam{
-        flex-direction: column;
+        flex-direction: row;
+        /* justify-content: center; */
     }
 
-    .org-title{
+    .work-nav-name-container{
+
+    }
+
+    .work-nav-name-container{
+        display: flex;
+        flex-direction: column;
+        max-width: 30%;
+    }
+    
+    .company-name-button-list{
+        display: flex;
+        flex-direction: column;
+        min-width: max-content;
+    }
+
+    .company-name-button-list{
+        margin-top: 0px ;
+    }
+
+    .company-name-inner-layer{
+        padding: 0.8rem;
+        font-size: 18px;
+     }
+
+    .work-timeline{
+        margin: 20px auto;
+    }
+
+
+    .company-title{
         font-size: 14px;
         font-weight: bold;
         margin-top: 15px;
     }
+
+    .rv-work-duty-tech-section{
+        max-width: 90vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+    
+    .techstack-container{
+        margin: 5px 10px;
+        max-width: 40vw;
+    }
+
+    .responsibility-container{
+        margin: 5px 10px;
+        max-width: 60vw;
+    } 
+
+     /* Layout for card area */
+     /* Logo card */
+    .work-company-logo-card{
+        margin: 5px;
+        padding: 5px;
+        display: flex;
+        /* justify-content: end; */
+        max-width: 75%;
+
+    }
+
+     .work-card-section{
+        display: flex;
+        flex-direction: row;        
+        justify-content: center;
+    }
+    .card-id-section{
+        justify-content: start;
+        align-self: center;
+        margin-left: 10px;
+        font-size: 100px;
+        font-weight: bold;
+        color: transparent;
+        -webkit-text-stroke: 2px var(--white); /* Webkit/Blink browsers */
+        text-stroke: 2px var(--white); /* Standard syntax */
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    .work-card-details{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .work-company-logo-card{
+        justify-content: center;
+        min-width: 40vw;
+        margin: 100px 100px;
+    }
+
+    .work-card-action-btn{
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .change-btn{
+        margin: 10px 5px;
+        font-size: 35px;
+        font-weight: 700;
+    }
+    
+
 
 
   }
   
   /* for Tablets and IPads Screen Viewports */
   @media (max-width: 1400px) {
+
     .work-section-flex-container{
         flex-direction: column;  
     }
+
+    .work-nav-name-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .company-name-button-list{
+        display: flex;
+        flex-direction: row;
+        min-width: max-content;
+    }
+
+    .company-name-button-list{
+        margin-top: 0px ;
+    }
+
+    .company-name-inner-layer{
+        padding: 0.8rem;
+        font-size: 16px;
+     }
+
     
     .work-companies-list-flex-iteam{
         flex-direction: row;
     }
 
+    .company-title{
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .rv-work-duty-tech-section{
+        max-width: 100vw;
+    }
+
+
+    .techstack-container{
+        margin: 5px 5px;
+        max-width: 40vw;
+     }
+
+     /* Layout for card area */
+
+    .work-card-section{
+        display: flex;
+        flex-direction: row; 
+        justify-content: start;       
+        max-width: 100vw;
+    }
+
+    .card-id-section{
+        justify-content: start;
+        align-self: center;
+        margin-left: 10px;
+        font-size: 60px;
+        font-weight: bold;
+        color: transparent;
+        -webkit-text-stroke: 2px var(--white); /* Webkit/Blink browsers */
+        text-stroke: 2px var(--white); /* Standard syntax */
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    .work-card-details{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+
+    .work-company-logo-card{
+        /* justify-content: center; */
+        align-self: end;
+        margin: 5rem 14rem;
+
+    }
+
+    .work-card-action-btn{
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .change-btn{
+        margin: 5px 5px;
+        font-size: 25px;
+        font-weight: 700;
+    }
+
   }
-  
+
+    /* for landscape Tablets and IPads Screen Viewports */
+    @media (max-width: 1100px) {
+   
+        .techstack-container{
+            margin: 5px auto;
+            max-width: 50vw;
+         }
+
+     /* Layout for card area */
+
+    .work-card-section{
+        display: flex;
+        flex-direction: row; 
+        justify-content: start;       
+        max-width: 100vw;
+    }
+
+    .card-id-section{
+        align-self: end;
+        margin: 15px 10px;
+        font-size: 50px;
+    }
+
+    .work-card-details{
+        display: flex;
+        flex-direction: column;
+        max-width: 80vw;
+    }
+
+    .work-company-logo-card{
+        justify-content: center;
+        margin: 5rem 5rem;
+
+    }
+
+    .work-card-action-btn{
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .change-btn{
+        margin: 5px 5px;
+        font-size: 25px;
+        font-weight: 900;
+    }
+      
+    }
+
+
   /* for Mobile Screen Viewports */
   @media (max-width: 480px) {
+    .work-company-logo-card{
+        justify-content: center;
+        margin: 100px auto;
+        /* margin-left: 0px; */
+        max-width: 90vw;
+    }
+
     .work-section-flex-container{
         flex-direction: column;  
     }
+
+    .work-nav-name-container{
+        display: flex;
+        flex-direction: column;
+        max-width: 100vw;
+    }
+
+    .company-name-button-list{
+        display: flex;
+        flex-direction: row;
+        min-width: max-content;
+    }
+
+    .company-name-button-list{
+        margin-top: 0px ;
+    }
+    .company-name-nav-btns{
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .company-name-inner-layer{
+        min-width: max-content;
+        padding: 0.8rem;
+        font-size: 14px;
+     }
     
     .work-companies-list-flex-iteam{
         flex-direction: row;
@@ -167,11 +538,58 @@
         justify-content: left;
     }
 
-    .org-title{
+    .company-title{
         font-size: 12px;
         font-weight: bold;
         margin-top: 10px;
     }
 
+    .techstack-container{
+       margin: 5px 5px;
+       max-width: 99vw;
+    }
+
+     /* Layout for card area */
+
+    .work-card-section{
+        display: flex;
+        flex-direction: column;        
+        /* justify-content: center; */
+    }
+
+    .card-id-section{
+        justify-content: center;
+        align-self: start;
+        margin: 5px;
+        font-size: 50px;
+        font-weight: bold;
+        color: transparent;
+        -webkit-text-stroke: 1px var(--white); /* Webkit/Blink browsers */
+        text-stroke: 1px var(--white); /* Standard syntax */
+    }
+
+    .work-company-logo-card{
+        justify-content: center;
+        margin: 0px 10px;
+        max-width: 95vw;
+    }
+
+    .work-card-details{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .work-card-action-btn{
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+    .change-btn{
+        margin: 15px 5px;
+        font-size: 25px;
+        font-weight: 700;
+    }
   
   }

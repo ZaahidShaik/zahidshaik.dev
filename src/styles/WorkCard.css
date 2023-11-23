@@ -48,19 +48,16 @@
 
 
 
-.role-style{
-    text-align: left;
-    text-transform: uppercase;
-}
 
-.location-style{
+/* TODO: remove location styles from this file */
+/* .location-style{
     font-size: 14px;
     font-weight: bold;
     margin-top: 10px;
     color: #757b9e;
     text-transform: uppercase;
 
-}
+} */
 
 .timeline-style{
     min-width: 200px;
@@ -105,11 +102,8 @@
     }
 
 
-    .org-title, .role-title{
-        font-size: 14px;
-        font-weight: bold;
-        margin-top: 15px;
-    }
+    .org-title, 
+
 
     .company-name{
         font-size: 25px;
@@ -123,7 +117,7 @@
     }
 
     .location-style{
-        font-size: 14px;
+        font-size: 16px;
         font-weight: bold;
         margin-top: 10px;
     }
@@ -166,11 +160,11 @@
         margin: 2px;
     }
     
-    .org-title, .role-title{
+    /* .org-title, .role-title{
         font-size: 14px;
         font-weight: bold;
         margin-top: 15px;
-    }
+    } */
 
     .company-name{
         font-size: 25px;

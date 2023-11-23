@@ -1,0 +1,48 @@
+.icon-inner-case, .icon-outer-case{
+
+    width: 60px;
+    height: 60px;
+
+}
+
+
+
+.icon-outer-case{
+    margin: 30px;
+
+    position: relative;
+    /* width: 60px;
+    height: 80px; */
+    border: 4px solid var(--primary-blue);; 
+    z-index: 1;
+
+}
+
+.icon-inner-case{
+
+    position: absolute;
+    transform: rotate(45deg);
+    left: -1px;
+    bottom: -1px;
+    /* width: 80px;
+    height: 80px; */
+
+    border: 3px solid #dbd8d5; 
+    z-index: -1;
+
+
+}
+
+.tech-tab-icon-style{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10px;
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    /* background-color: #101F3D; */
+    border-color: rgba(0, 0, 0, 0);;
+
+}

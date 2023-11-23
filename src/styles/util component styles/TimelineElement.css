@@ -1,0 +1,158 @@
+
+
+.timeline-container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.date-month-container, .current-container{
+    font-size: 18px;
+    font-weight: 900;
+    margin-top: 5px;
+}
+
+.date-year-container, .employer-container{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.date-month-container, .current-container{
+    /* width: 3rem;
+    height: 1.5rem; */
+    color: var(--primary-blue);
+    /* padding: 0.4rem; */
+    margin-right: 0.3em;
+    margin-left: 0px;
+    /* text-align: end; */
+}
+
+.date-year-container::before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.0em;
+    height: 2px;
+    margin-right: 0.3em;
+    background-color: currentcolor;
+}
+
+
+.date-year-container{
+    text-align: end;
+}
+
+
+
+.line-divider{
+    margin: 10px auto;
+    width: 0px;
+    border: 3px dashed #757b9e;
+
+    height: 120px;
+}
+
+
+/* MEDIA QUERIES */
+/* for Desktops and Laptops Screen Viewport */
+@media (min-width: 1401px) {
+    .date-month-container, .current-container{
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-top: 5px;
+    }
+    
+    .date-year-container, .employer-container{
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-top: 2px;
+    }
+
+    .employer-container::before{
+        content: "#";
+        display: inline-block;
+        margin-right: 0.2em;
+        color: var(--primary-blue);
+    }
+    
+}
+
+/* for Tablets and IPads Screen Viewport */
+@media (max-width: 1400px) {
+    .date-month-container, .current-container{
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-top: 5px;
+    }
+    
+    .date-year-container, .employer-container{
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-top: 2px;
+    }
+    .employer-container::before{
+        content: "#";
+        display: inline-block;
+        margin-right: 0.2em;
+        color: var(--primary-blue);
+    }
+}
+
+/* for Tablets and IPads Screen Viewport */
+@media (max-width: 1100px) {
+    .date-month-container, .current-container{
+        font-size: 13px;
+        text-transform: uppercase;
+        margin-top: 5px;
+    }
+    
+    .date-year-container, .employer-container{
+        font-size: 13px;
+        text-transform: uppercase;
+        margin-top: 2px;
+    }
+    .employer-container::before{
+        content: "#";
+        display: inline-block;
+        margin-right: 0.2em;
+        color: var(--primary-blue);
+    }
+
+}
+
+/* for Mobile Screen Viewport */
+@media (max-width: 480px) {
+    .date-container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .date-month-container, .current-container{
+        font-size: 12px;
+        text-transform: uppercase;
+        margin-top: 2px;
+    }
+    
+    .date-year-container, .employer-container{
+        font-size: 12px;
+        text-transform: uppercase;
+        margin-top: 2px;
+    }
+
+    .employer-container::before{
+        content: "";
+        display: inline-block;
+        margin-right: 0.2em;
+        color: var(--primary-blue);
+    }
+
+    .date-year-container::before{
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 0.2em;
+        height: 2px;
+        margin-right: 0.3em;
+        background-color: currentcolor;
+    }
+}

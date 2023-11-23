@@ -5,7 +5,7 @@ export interface locationType{
 }
 
 export interface techStackType{
-    stackName: String,
+    stackName: stacksTypes,
     technology: String[],
 }
 
@@ -15,13 +15,36 @@ export interface dateType
      year: number,
 }
 
+export enum CurrentlyAtCompany
+{
+    PRESENT,
+}
+
+export enum roleTypes { 
+   Design,
+   Developer,
+   DevOps,
+   ScrumMaster,
+   Tester,
+   QA,
+}
+
+export enum stacksTypes{
+    Backend = "Backend",
+    Frontend = "Frontend",
+    Cloud = "Cloud",
+}
+
 export interface workType
 {
+    id: String,
     componyName: String,
     roleTitle: String,
     location: locationType,
+    roles: String[],
     techStack: techStackType[],
     startDate: dateType,
+    CurrentlyAtCompany : Boolean,
     endDate: dateType,
     roleGuidMDName: String,
     imageUrl: string,
@@ -29,7 +52,8 @@ export interface workType
 
 
 export const workList: workType[] = [
-    {
+    {   
+        id: '03',
         componyName: 'Meraki Solutions',
         roleTitle: 'Full Stack Java Developer',
         location: 
@@ -38,17 +62,18 @@ export const workList: workType[] = [
             state: 'WA',
             countryCode: 'USA',
         },
+        roles: ['Dev', 'Design'],
         techStack:[
             {
-                stackName: 'Frontend',
+                stackName: stacksTypes.Frontend,
                 technology: ['React','TypeScript','Redux', 'Webpack', 'Babel', 'Enzyme', 'HTML', 'CSS', 'Jest', 'Node.js'],
             },
             {
-                stackName: 'Backend',
+                stackName: stacksTypes.Backend,
                 technology: ['Java','Spring Boot','SOAP', 'XML', 'Junit', 'EasyMock', 'Tomcat', 'Docker'],
             },
             {
-                stackName: 'Cloud',
+                stackName: stacksTypes.Cloud,
                 technology: ['DynamoDB','S3','Elasticsearch', 'Lambda', 'Kinesis', 'CloudWatch'],
             },
         ],
@@ -57,15 +82,17 @@ export const workList: workType[] = [
             month: 'March',
             year: 2023,
         },
+        CurrentlyAtCompany: true,
         endDate: 
         {
-            month: 'October',
-            year: 2023,
+            month: '',
+            year: 0,
        },
        roleGuidMDName: 'Amazon.md',
        imageUrl: "amazon_logo.png",
     },
     {
+        id: '02',
         componyName: 'Amazon.com',
         roleTitle: 'Software Development Engineer',
         location: 
@@ -74,17 +101,18 @@ export const workList: workType[] = [
             state: 'WA',
             countryCode: 'USA',
         },
+        roles: ['Dev', 'Design'],
         techStack:[
             {
-                stackName: 'Frontend',
+                stackName: stacksTypes.Frontend,
                 technology: ['React','TypeScript','Redux', 'Webpack', 'Babel', 'Enzyme', 'HTML', 'CSS', 'Jest', 'Node.js'],
             },
             {
-                stackName: 'Backend',
+                stackName: stacksTypes.Backend,
                 technology: ['Java','Spring Boot','SOAP', 'XML', 'Junit', 'EasyMock', 'Tomcat', 'Docker'],
             },
             {
-                stackName: 'Cloud',
+                stackName: stacksTypes.Cloud,
                 technology: ['DynamoDB','S3','Elasticsearch', 'Lambda', 'Kinesis', 'CloudWatch'],
             },
         ],
@@ -93,6 +121,7 @@ export const workList: workType[] = [
             month: 'April',
             year: 2022,
         },
+        CurrentlyAtCompany: false,
         endDate: 
         {
             month: 'March',
@@ -102,25 +131,27 @@ export const workList: workType[] = [
        imageUrl: "amazon_logo.png",
     },
     {
+        id: '01',
         componyName: 'Baylor College of Medicine',
-        roleTitle: 'Full Stack Web Developer (Capstone)',
+        roleTitle: 'Full Stack Web Developer',
         location: 
         {
             city: 'Houston',
             state: 'TX',
             countryCode: 'USA',
         },
+        roles: ['Dev', 'Design'],
         techStack:[
             {
-                stackName: 'Frontend',
+                stackName: stacksTypes.Frontend,
                 technology: ['Angular','TypeScript','Redux', 'Webpack', 'Babel', 'Enzyme', 'HTML', 'CSS', 'Jest', 'Node.js'],
             },
             {
-                stackName: 'Backend',
+                stackName: stacksTypes.Backend,
                 technology: ['JavaScript','Node.js','Express.js', 'SQL', 'Docker'],
             },
             {
-                stackName: 'Cloud',
+                stackName: stacksTypes.Cloud,
                 technology: ['DynamoDB', 'Amazon EC2'],
             },
         ],
@@ -129,6 +160,7 @@ export const workList: workType[] = [
             month: 'May',
             year: 2021,
         },
+        CurrentlyAtCompany: false,
         endDate: 
         {
             month: 'December',

@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 // import Greeting from './components/Greeting';
 import LandingPage from './mainpage/LandingPage';
 import ErrorPage from './components/Until/ErrorPage';
-
+import StyledEngineProvider from "@mui/material/StyledEngineProvider";
 
 
 const root = ReactDOM.createRoot(

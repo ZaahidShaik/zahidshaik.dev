@@ -52,7 +52,7 @@ const WorkCards = ({work, screenWidth} : props) => {
             {/* Layout for row 3: Role TimeLine */}
             <div className="timeline-style">
             {/* <div className="org-title">Timeline</div> */}
-                <TimelineElement startDate={work.startDate} endDate={work.endDate} screenWidth={screenWidth}/>
+                {/* <TimelineElement startDate={work.startDate} endDate={work.endDate} screenWidth={screenWidth}/> */}
             </div>
         </div>
     
@@ -67,6 +67,8 @@ const WorkCards = ({work, screenWidth} : props) => {
         <div className="tech-stack-style">
 
         </div>
+
+
 
     </div>
 

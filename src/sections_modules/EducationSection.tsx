@@ -18,7 +18,9 @@ const EducationSection = ({educationList, screenWidth} : props) => {
     <VerticalSideLabel labelText={'My Education'}/>
     <div className='education-flex-container'>
     {educationList.map((education :any, index: number) => {
-      return <div className='project-flex-items' key={index}><EducationCard education={education} screenWidth={screenWidth}/></div>
+      return <div className='project-flex-items' key={index}>
+        <EducationCard education={education} screenWidth={screenWidth}/>
+        </div>
     })}
     </div>
     </div>

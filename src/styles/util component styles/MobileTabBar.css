@@ -74,7 +74,7 @@
 
 .carousel-container{
     width: 90%;
-    max-width: 450px;
+    max-width: 99vw;
     margin-left: auto;
     margin-right: auto;
     scrollbar-width: none;
@@ -129,3 +129,11 @@
     /* transition-duration: 1s;
     transition-delay: 0.2s; */
 }
+
+  /* for Mobile Screen Viewports */
+  @media (max-width: 480px) {
+    .carousel-container{
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+  }

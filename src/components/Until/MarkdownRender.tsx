@@ -1,7 +1,46 @@
 import React, { useEffect, useState } from 'react'
-
-// import file from '../../persistance_store/markdown/Amazon.md'
 import ReactMarkdown from 'react-markdown';
+
+import '../../styles/CardComponentsStyles/MarkdownRender.css'
+
+
+
+const MarkdownHandler = (fileContent : string) => {
+  const parsedSectionContent = <ReactMarkdown children={fileContent} />
+  // console.log(parsedSectionContent.props)
+    const FilteredSectionCards = parsedSectionContent.props.children.split('\n##').filter(Boolean);
+    // console.log(FilteredSectionCards)
+
+    const CardContent = FilteredSectionCards.map((item: string) => item.split('\n\n').filter(Boolean))
+
+      return CardContent;
+}
+
+const MarkdownSectionCards = (heading: string, content: string) => {
+  return (
+    <div className="mkd-card-outer-layer">
+      <div className="mkd-card-inner-layer">
+        <div className="mkd-content-card">
+
+          <div className="mkd-card-title">
+            <div className="mkd-header-outer-layer">
+              <div className="mkd-header-inner-layer">
+              {/* <ReactMarkdown children={`###${heading}`} /> */}
+              {heading}
+              </div>
+            </div>
+          </div>
+
+          <div className="mkd-card-content">
+          <ReactMarkdown children={`\n${content}`} />
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  )
+}
 
 
 interface props {
@@ -12,11 +51,9 @@ const MarkdownRender = ({ fileName } : props) => {
 
     const filepath =  require("../../persistance_store/markdown/" + fileName);
 
-    // const [markownFile, setMarkownFile] = useState(" ")
-
     // console.log(filepath)
 
-    const [content, setContent] = useState("");
+    const [content, setContent] = useState(" ");
 
     useEffect(() => {
       fetch(filepath)
@@ -24,11 +61,17 @@ const MarkdownRender = ({ fileName } : props) => {
         .then((text) => setContent(text));
     }, [filepath]);
 
+    const CardContent =  MarkdownHandler(content);
+
     
   return (
-    <div>
-     <ReactMarkdown children={content} />
-    </div>
+    <>
+     {CardContent.map((cardItem: any, index: number) => (
+      <div key={index}>
+        {MarkdownSectionCards(cardItem[0], cardItem.slice(1))}
+      </div>
+     ))}
+    </>
   )
 }
 

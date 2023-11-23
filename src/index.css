@@ -10,8 +10,8 @@
   --card-divider-color: #7a95b7;
 
   /* Fonts */
-  --prmary-font-family: ;
-  --secondry-font-family: ;
+  --primary-font-family: ;
+  --secondary-font-family: ;
   --desktop-font-size: ;
   --ipad-font-size: ;
   --mobile-font-size: ;
@@ -119,14 +119,11 @@ button text: 10px or 12px
 
 icon logos: 16px
 
-logo
-Fontsize :  70px
-lineheight: 12px
 
 
  */
 
-/* for Mobile Screen Viewports */
+/* for Mobile Screen Viewport */
 @media (max-width: 480px) {
   :root {
     /* Greeting section */
@@ -136,14 +133,14 @@ lineheight: 12px
     /* Social buttons */
   }
 }
-/* for Tablets and IPads Screen Viewports */
+/* for Tablets and IPads Screen Viewport */
 @media (max-width: 1100px) {
   :root {
   /* logo Section */
    --logo-font-size: 0px;
    --logo-line-height: 12px;
 
-  /*  Nav Iteam Sections */
+  /*  Nav Item Sections */
   --nav-items-font-size: 20px;
 
   /* Greeting section */
@@ -156,7 +153,7 @@ lineheight: 12px
   }
 }
 
-/* for DeskTops and Laptops Screen Viewports */
+/* for DeskTops and Laptops Screen Viewport */
   @media (max-width: 1800px) {
     :root {
     /* Greeting section */
