@@ -35,17 +35,81 @@
     text-align: left;
     margin-left: 25px;
 }
-.section-name{
+
+/* section name */
+
+.tech-section-label-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.tech-section-name{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+
+    gap: 5px;
+    min-width: 15rem;
+    margin: 5px auto;
+
+}
+
+.section-name-icon, .section-name{
     color: var(--primary-blue);
     text-transform: uppercase;
 
+    font-size: 18px;
+    font-weight: 700;
+
 }
 
-.technologies-list-box{
-    margin: 5px;
+.tech-label-divider{
+    min-width: max-content;
+    height: 0px;
+    border: 2px solid #757b9e;
+}
+
+
+/* list Items */
+
+.technologies-list-item{
+    display: flex;
+    flex-direction: row;
+
+    margin: 6px;
     margin-left: 50px;
+
+}
+
+.technologies-list-item-icon{
+    font-size: 24px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+    display: flex;
+    align-self: end;
+    color: var(--white);
+
+}
+
+.technologies-list-item-name{
+    font-size: 18px;
+    font-weight: 700;
     text-align: left;
 }
+
+
+.technologies-list-item-name::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #757b9e;
+
+    width: 2px;
+    height: 1.2em;
+    margin-right: 0.5em;
+  }
 
 /* MEDIA QUERIES */
 /* for DeskTops and Laptops Screen Viewports */
@@ -53,31 +117,160 @@
 
     .skill-stack-container{
         display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        margin: 15px;
-    }
-
-    .stack-name-flex{
-     
+        flex-direction: row;
+        align-self: center;
+        min-width: 50rem;
+        /* min-height: 10rem; */
+        margin: 15px auto;
     }
     
     .stack-technologies-list-flex{
-        margin: 5px;
-    
+        max-width: 80%;
+        justify-content: center;  
+        align-self: center;  
+        margin: 25px auto;
     }
     
     .stack-subsection-technologies-flex{
-        margin: 15px;
+        margin: 15px auto;
+        max-width: 70%;
+        justify-content: center;
 
+    }
+
+    /* card label */
+    .stack-name-flex{
+       align-self: center;
+       margin-left: 10px;
+    }
+    .card-stack-label{
+        display: flex;
+        flex-direction: row; 
+        margin: 15px;
+    }
+
+    .card-stack-icon{
+        font-size: 60px;
+        font-weight: 900;
+        align-self: center;
+        margin: 5px;
+    }
+
+    .card-stack-name-container{
+        align-self: center;
+        margin-left: 10px;
+    }
+
+    .card-stack-name1, .card-stack-name2{
+        font-size: 30px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .card-stack-name1{
+        color: var(--primary-blue);
+    }
+
+    .card-stack-name2::before{
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        background-color: #757b9e;
+
+        width: 1.5em;
+        height: 0.1em;
+        margin-right: 0.5em;
+    }
+
+
+
+
+    /* section name */
+    .subsection-tech-box{
+        min-height: 10rem;
+    }
+
+    .tech-section-label-container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .tech-section-name{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+
+        gap: 5px;
+        margin: 5px auto;
+    }
+
+    .section-name-icon, .section-name{
+        color: var(--primary-blue);
+        text-transform: uppercase;
+    }
+    
+    .section-name-icon{
+        font-size: 24px;
+    }
+    .section-name{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+
+    .tech-label-divider{
+        min-width: max-content;
+        height: 0px;
+        border: 2px solid #757b9e;
+    }
+
+
+    /* list Items */
+
+    .technologies-list-item{
+        display: flex;
+        flex-direction: row;
+
+        margin: 6px;
+        margin-left: 40px;
+
+    }
+
+    .technologies-list-item-icon{
+        font-size: 24px;
+        margin-right: 10px;
+        margin-left: 10px;
+
+        display: flex;
+        align-self: end;
+        color: var(--white);
+
+    }
+
+    .technologies-list-item-name{
+        font-size: 18px;
+        font-weight: 500;
+        text-align: left;
+    }
+
+
+    .technologies-list-item-name::before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        background-color: #757b9e;
+
+        width: 2px;
+        height: 1.2em;
+        margin-right: 0.5em;
     }
     
     
 }
 
 /* for Tablets and IPads Screen Viewports */
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
     .skill-stack-container{
         display: flex;
         flex-direction: column;
@@ -85,18 +278,137 @@
         justify-content: center;
         margin: 15px;
     }
-
-    .stack-name-flex{
-
-    }
     
     .stack-technologies-list-flex{
-    
+        max-width: 50%;
     }
     
     .stack-subsection-technologies-flex{
-        margin: 15px;
+        margin: 15px auto;
+        max-width: 100%;
+        justify-content: center;
+    }
 
+    /* card label */
+    .stack-name-flex{
+       align-self: start;
+       margin: auto 10px;
+    }
+    .card-stack-label{
+        display: flex;
+        flex-direction: row; 
+        margin: 5px;
+    }
+
+    .card-stack-icon{
+        font-size: 40px;
+        font-weight: 900;
+        align-self: center;
+        margin: 5px;
+    }
+
+    .card-stack-name-container{
+        align-self: center;
+        margin-left: 10px;
+    }
+
+    .card-stack-name1, .card-stack-name2{
+        font-size: 24px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .card-stack-name1{
+        color: var(--primary-blue);
+    }
+
+    .card-stack-name2::before{
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        background-color: #757b9e;
+
+        width: 1.0em;
+        height: 0.1em;
+        margin-right: 0.25em;
+    }
+
+    /* section name */
+
+    .tech-section-label-container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .tech-section-name{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+
+        gap: 5px;
+        margin: 5px auto;
+    }
+
+    .section-name-icon, .section-name{
+        color: var(--primary-blue);
+        text-transform: uppercase;
+    }
+    
+    .section-name-icon{
+        font-size: 20px;
+    }
+    .section-name{
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+
+    .tech-label-divider{
+        min-width: max-content;
+        height: 0px;
+        border: 1px solid #757b9e;
+    }
+
+
+    /* list Items */
+
+    .technologies-list-item{
+        display: flex;
+        flex-direction: row;
+
+        margin: 6px;
+        margin-left: 25px;
+
+    }
+
+    .technologies-list-item-icon{
+        font-size: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+
+        display: flex;
+        align-self: end;
+        color: var(--white);
+
+    }
+
+    .technologies-list-item-name{
+        font-size: 16px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+
+    .technologies-list-item-name::before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        background-color: #757b9e;
+
+        width: 1px;
+        height: 1.2em;
+        margin-right: 0.5em;
     }
     
 }
@@ -107,9 +419,9 @@
     .skill-stack-container{
         display: flex;
         flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        margin: 5px;
+        align-self: center;
+        /* justify-content: center; */
+        margin: 5px auto;
     }
 
     .stack-name-flex{
@@ -121,8 +433,131 @@
     }
     
     .stack-subsection-technologies-flex{
-        margin-top: 5px;
-        margin-left: 0px;
+        margin: 15px auto;
+        max-width: 100%;
+        justify-content: center;
+    }
 
+    /* card label */
+    .stack-name-flex{
+       align-self: start;
+       margin-left: 5px;
+    }
+    .card-stack-label{
+        display: flex;
+        flex-direction: row; 
+        margin: 5px;
+    }
+
+    .card-stack-icon{
+        font-size: 40px;
+        font-weight: 900;
+        align-self: center;
+        margin: 5px;
+    }
+
+    .card-stack-name-container{
+        align-self: center;
+        margin-left: 10px;
+    }
+
+    .card-stack-name1, .card-stack-name2{
+        font-size: 20px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .card-stack-name1{
+        color: var(--primary-blue);
+    }
+
+    .card-stack-name2::before{
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        background-color: #757b9e;
+
+        width: 0.9em;
+        height: 0.1em;
+        margin-right: 0.5em;
+    }
+
+    /* section name */
+
+    .tech-section-label-container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .tech-section-name{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+
+        gap: 4px;
+        margin: 2px auto;
+    }
+
+    .section-name-icon, .section-name{
+        color: var(--primary-blue);
+        text-transform: uppercase;
+    }
+
+    .section-name-icon{
+        font-size: 20px;
+    }
+    .section-name{
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+
+
+    .tech-label-divider{
+        min-width: max-content;
+        height: 0px;
+        border: 1px solid #757b9e;
+    }
+
+
+    /* list Items */
+
+    .technologies-list-item{
+        display: flex;
+        flex-direction: row;
+
+        margin: 10px;
+        margin-left: 15px;
+
+    }
+
+    .technologies-list-item-icon{
+        font-size: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+
+        display: flex;
+        align-self: end;
+        color: var(--white);
+
+    }
+
+    .technologies-list-item-name{
+        font-size: 16px;
+        font-weight: 500;
+        text-align: left;
+    }
+
+
+    .technologies-list-item-name::before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        background-color: #757b9e;
+
+        width: 1.5px;
+        height: 1.2em;
+        margin-right: 0.5em;
     }
 }

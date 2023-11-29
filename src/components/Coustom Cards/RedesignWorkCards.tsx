@@ -3,11 +3,8 @@ import { dateType, workType } from '../../persistance_store/work'
 import { HiLocationMarker } from "react-icons/hi";
 
 import '../../styles/CardComponentsStyles/RedesignWorkCardStyle.css';
-import TimelineElement, { DateComponent, PresentComponent } from '../Until/TimelineElement';
-import TechStackTabs from '../Until/Tabs/TechStackTabs';
-import MarkdownRender from '../Until/MarkdownRender';
+import { DateComponent, PresentComponent } from '../Until/TimelineElement';
 import Connector from '../Until/Connector';
-import { truncate } from 'fs/promises';
 
 
 

@@ -88,40 +88,40 @@ const BaseFrameLeftTopRightDownLength100: FC<BaseFrameProps> = ({child, childNod
     )
 }
 
-const BaseFrameLeftTopRightDown85DegLength100: FC<BaseFrameProps> = ({child, childNodeLocation, rotationAngle, centerLength, topMargin, bottomMargin, screenWidth } : BaseFrameProps) => {
-    let dendriteWidth;
+// const BaseFrameLeftTopRightDown85DegLength100: FC<BaseFrameProps> = ({child, childNodeLocation, rotationAngle, centerLength, topMargin, bottomMargin, screenWidth } : BaseFrameProps) => {
+//     let dendriteWidth;
     
-    if(screenWidth <=480){
-       dendriteWidth =  centerLength/6;
-    }
+//     if(screenWidth <=480){
+//        dendriteWidth =  centerLength/6;
+//     }
 
-    if(screenWidth >=480){
-        dendriteWidth =  centerLength/4;
+//     if(screenWidth >=480){
+//         dendriteWidth =  centerLength/4;
 
-    }
+//     }
     
     
-    return (
-        <>
-        <div className="container" style={{height: `${centerLength}px`}}>
-          {(childNodeLocation === 'top') ? <div className="child-style">{child}</div> : <></> }
-          {/* <div className="bottom-end-icon" style={{marginTop: `${topMargin}px`, alignSelf: 'start'}}><GoDotFill/></div> */}
+//     return (
+//         <>
+//         <div className="container" style={{height: `${centerLength}px`}}>
+//           {(childNodeLocation === 'top') ? <div className="child-style">{child}</div> : <></> }
+//           {/* <div className="bottom-end-icon" style={{marginTop: `${topMargin}px`, alignSelf: 'start'}}><GoDotFill/></div> */}
     
           
-          <div className="line2" style={{width: `${centerLength}px`, alignSelf: 'center', transform: `rotate(${rotationAngle}deg)`}}></div>
+//           <div className="line2" style={{width: `${centerLength}px`, alignSelf: 'center', transform: `rotate(${rotationAngle}deg)`}}></div>
 
-          <div className="line1" style={{width: `${dendriteWidth}px`, marginLeft: `-${(centerLength/2)-2}px`, alignSelf: 'start'}}></div>
-          <div className="bottom-end-icon" style={{marginTop: `${topMargin}px`, alignSelf: 'start'}}><GoDotFill/></div>
+//           <div className="line1" style={{width: `${dendriteWidth}px`, marginLeft: `-${(centerLength/2)-2}px`, alignSelf: 'start'}}></div>
+//           <div className="bottom-end-icon" style={{marginTop: `${topMargin}px`, alignSelf: 'start'}}><GoDotFill/></div>
           
-          <div className="line3" style={{width: `${dendriteWidth}px`, marginLeft: `-${(centerLength/2)-2}px`, alignSelf: 'end'}}></div>
+//           <div className="line3" style={{width: `${dendriteWidth}px`, marginLeft: `-${(centerLength/2)-2}px`, alignSelf: 'end'}}></div>
           
-          <div className="top-start-icon flex-row" style={{marginBottom: `${bottomMargin}px`, alignSelf: 'end'}}><GoDotFill/>
-          {(childNodeLocation === 'bottom') ? <div className="child-style">{child}</div> : <></> }
-          </div>
-       </div>
-        </>
-    )
-}
+//           <div className="top-start-icon flex-row" style={{marginBottom: `${bottomMargin}px`, alignSelf: 'end'}}><GoDotFill/>
+//           {(childNodeLocation === 'bottom') ? <div className="child-style">{child}</div> : <></> }
+//           </div>
+//        </div>
+//         </>
+//     )
+// }
 
 const BaseFrameRightTopLeftDownLength50: FC<BaseFrameProps> = ({child, childNodeLocation, rotationAngle, centerLength, topMargin, bottomMargin, screenWidth} : BaseFrameProps) => {
     let dendriteWidth;
@@ -162,7 +162,7 @@ interface ChildProps{
 }
 const TitleConnector: FC<ChildProps> = ({child, screenWidth} : ChildProps) => {
 
-    {/* for Mobile */}
+    // {/* for Mobile */}
     if(screenWidth <= 480){
         return <BaseFrameRightTopLeftDownLength50 child={child} childNodeLocation={'top'}
         rotationAngle={-60} centerLength={50} topMargin={-9} bottomMargin={-12} screenWidth={screenWidth}/>

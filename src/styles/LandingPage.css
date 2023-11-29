@@ -81,6 +81,10 @@
 
 /* for Mobile Screen Viewports */
 @media (max-width: 480px) {
+  .background{
+    max-width: 100vw;
+  }
+   
     .page-section-container {
         margin-left: 0px;
         margin-right: 0px;
@@ -101,6 +105,10 @@
         justify-content: start;
 
     }
-
+    
+    .scroller::-webkit-scrollbar {
+      width: 5px;
+      height: 10px;
+    }
 
 }

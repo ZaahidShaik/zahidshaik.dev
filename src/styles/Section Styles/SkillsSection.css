@@ -67,20 +67,17 @@
 }
 
 .skills-card-flex-item{
-    min-height: 80vh;
+    min-height: 70vh;
     margin: 15px;
     padding: 5px;
     text-align: center;
     
-    max-width: 80vw;
+    /* max-width: 60vw; */
     border-color: var(--primary-blue);
     border-style: solid;
     border-width: 1px;
     background-color: #101f3d;
     padding: 15px;
-
-
-
 }
 
 
@@ -90,18 +87,24 @@
     .social-flex-container{
         flex-direction: column;
         align-self: center;
-        justify-content: start;
+        /* justify-content: start; */
     }
 
     .group-button-flex-item{
         margin: 15px;
         text-align: center;
     }
+    .skills-section-container{
+        margin-bottom: 10vh;
+    }
 
     .skills-card-flex-item{
-        min-height: 80vh;
+        min-height: 50vh;
+        max-width: 60vw;
         margin: 15px;
         padding: 5px;
+        justify-content: center;
+        align-self: center;
         /* text-align: center; */
     
     }
@@ -109,7 +112,7 @@
 }
 
 /* for Tablets and IPads Screen Viewports */
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
     .social-flex-container{
         flex-direction: column;
         align-self: center;
@@ -118,12 +121,19 @@
 
     .group-button-flex-item{
         margin: 15px;
+        margin-top: 30px;
         text-align: center;
     }
+
+    .skills-section-container{
+        margin-bottom: 8vh;
+    }
     .skills-card-flex-item{
-        min-height: 70vh;
+        min-height: 60vh;
+        max-width: 80vw;
         margin: 15px;
         padding: 5px;
+        justify-content: center;
         /* text-align: center; */
     
     }

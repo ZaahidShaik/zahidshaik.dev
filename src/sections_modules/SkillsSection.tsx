@@ -16,6 +16,8 @@ const SkillsSection = ({skillsList, screenWidth} : props) => {
 
     const [stackDetails, setStackDetails] = useState(skillsList[0]); 
 
+
+
     const MobileTabBar = (skillsList :skillTypes[])  => {
       return (
         <>
@@ -55,6 +57,8 @@ const SkillsSection = ({skillsList, screenWidth} : props) => {
         }
       }
 
+      // backgroundColor: `{${isActiveTab(skillsStack.stackName) ? "#757b9e": ""}}`
+
     const RenderButtonGroup = (buttonSize: "small" | "medium" | "large" , fontsize: number, buttonWidth: string, skills :skillTypes[] ) => {
       return <ButtonGroup size={buttonSize} color='inherit' variant="outlined"   
         style={{textTransform: 'none',   fontSize: fontsize,   borderColor: '#60b0cf', width:'auto'}}>
@@ -64,7 +68,7 @@ const SkillsSection = ({skillsList, screenWidth} : props) => {
     const RenderButton = ( buttonSize: "small" | "medium" | "large" , fontsize: number, buttonWidth: string, stackList : skillTypes[]) => {
       return stackList.map((skillsStack :skillTypes, index: number) => {
             return <Button size={buttonSize} color='inherit' variant="outlined" key={index} onClick={() => {setStackDetails(skillsStack)}}
-            style={{textTransform: 'none',   fontSize: fontsize,   borderColor: '#60b0cf', width: 'auto'}}>
+            style={{textTransform: 'none', fontSize: fontsize, backgroundColor:`${isActiveTab(skillsStack.stackName) ? "#757b9e": ""}`,borderColor: "#60b0cf", width: 'auto'}}>
                 {skillsStack.stackName}</Button>
             })
     }

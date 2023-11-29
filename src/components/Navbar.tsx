@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import '../styles/Navbarstyle.css';
 import { navBarList } from '../models/models';
 import Logo from './Logo';
-import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 // import { log } from 'console';
 
@@ -12,8 +11,8 @@ import { HashLink } from 'react-router-hash-link';
  - Home (Landing/greeting/Intro)
  - Featured (Featured Projects section)
  - Projects (All other project section)
- - Work Expreseinec (Work experience Section)
- - Education (Educationa and Certifications)
+ - Work Expressing (Work experience Section)
+ - Education (Education and Certifications)
  - Skills (Skills Sections)
 **/
 interface props {
@@ -46,7 +45,7 @@ const Navbar = ({ tabList}: props) => {
     window.addEventListener("scroll", handleScroll);     
     return () => 
     window.removeEventListener("scroll",handleScroll);    
-    }, [])
+    })
 
 
   return (

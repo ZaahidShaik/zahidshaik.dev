@@ -4,7 +4,8 @@ import SectionLabels from './SectionLabels';
 
 import '../styles/SkillsCards.css'
 import { skillTypes, subSectionType } from '../persistance_store/skills';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+// import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import IconBuilder from './Until/IconBuilder';
 
 
 interface props {
@@ -14,16 +15,50 @@ interface props {
 
 const SkillsCards = ({stackList}: props) => {
 
+  const CardStackLabel = (label: String) => {
+    
+    const splitLabel = label.split(' ');
+
+    return <>
+      <div className='card-stack-label'>
+          <div className="card-stack-icon">{IconBuilder(splitLabel[0])}</div>
+          <div className="card-stack-name-container">
+            <div className="card-stack-name1">{splitLabel[0]}</div>
+            <div className="card-stack-name2">{splitLabel[1]}</div>
+          </div>
+      </div>
+    </>
+  }
+
+  const TechSectionLabels = (name: String) => {
+    return <>
+    <div className="tech-section-label-container">
+        <div className="tech-label-divider"></div>
+        <div className='tech-section-name'>
+            <div className="section-name-icon">{IconBuilder(name)}</div>
+            <div className="section-name">{name}</div>
+        </div>
+        <div className="tech-label-divider"></div>
+    </div>
+    </>
+  }
+
   const RenderStackTechnologies = ( techNames: String[]) =>  {
     return techNames.map(( tech: String , index: number) => {
-           return <div key={index} className='technologies-list-box'><ChevronRightIcon />{tech}</div>
+          return <>
+          <div key={index} className='technologies-list-item'>
+              <div className="technologies-list-item-icon">{IconBuilder(tech)}</div>
+              <div className="technologies-list-item-name">{tech}</div>
+          </div>
+          </>
     })
   }
 
   const RenderSubSection = ( subSection: subSectionType[]) =>  {
     return subSection.map(( section: subSectionType , index: number) => {
            return <div key={index} className='subsection-tech-box'>
-                   <div className='section-name'># {section.sectionName}</div>
+                   {TechSectionLabels(section.sectionName)}
+                   {/* <div className='section-name'># {section.sectionName}</div> */}
                    {(section.sectionTechnologies.length > 0 || !section.sectionTechnologies) && <div>{RenderStackTechnologies(section.sectionTechnologies)}</div>}
                    {(section.subSubSection.length > 0 || !section.subSubSection) && <div>{RenderSubSubSection(section.subSubSection)}</div> }
                   </div>
@@ -33,7 +68,7 @@ const SkillsCards = ({stackList}: props) => {
   const RenderSubSubSection = ( subSection: subSectionType[]) =>  {
     return subSection.map(( section: subSectionType , index: number) => {
            return <div key={index} className='subsection-tech-box'>
-                   <div className='sub-section-name'>{section.sectionName}</div>
+                   <div className='sub-section-name'> {section.sectionName}</div>
                    {section.sectionTechnologies.length > 0 && <div>{RenderStackTechnologies(section.sectionTechnologies)}</div>}                  
                   </div>
     })
@@ -42,23 +77,13 @@ const SkillsCards = ({stackList}: props) => {
   return (
     <>
 
-
-
-    {/* <div className="skills-flex-container">
-        {skillsList.stackTechnologies.map((technologyName :any, index: number) => {
-            return <div className='skills-flex-items-cards' key={index}> 
-                    <MdArrowForwardIos className='icon-style'/>{technologyName}</div>
-        })}
-    </div> */}
-
-    {/* Add buttons section */}
-
     {/* New Design */} 
     
     <div className="skill-stack-container">
     {/* stackName: String,  */}
     <div className="stack-name-flex">
-    <SectionLabels labeltext={stackList.stackName} labelType='SubSection'/>
+    {/* <SectionLabels labeltext={stackList.stackName} labelType='SubSection'/> */}
+    {CardStackLabel(stackList.stackName)}
     </div>
 
     {/* stackTechnologies: String[] */}
@@ -72,9 +97,6 @@ const SkillsCards = ({stackList}: props) => {
     </div>
 
     </div>
-
-
-
 
     </>
   )

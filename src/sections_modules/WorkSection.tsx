@@ -1,7 +1,6 @@
 import React, { ReactNode, useState } from 'react'
 import { techStackType, workType } from '../persistance_store/work';
-import WorkCards from '../components/Coustom Cards/WorkCards';
-import { Button, Tab, Tabs } from '@mui/material';
+import { Tab, Tabs } from '@mui/material';
 
 
 import '../styles/util component styles/MobileTabBar.css';
@@ -11,21 +10,17 @@ import '../styles/Section Styles/WorkSection.css'
 
 import VerticalSideLabel from '../components/Until/VerticalSideLabel';
 import SectionLabels from '../components/SectionLabels';
-import RedesignWorkCards, { EndDateSection, StartDateSection } from '../components/Coustom Cards/RedesignWorkCards';
+import RedesignWorkCards from '../components/Coustom Cards/RedesignWorkCards';
 import MarkdownRender from '../components/Until/MarkdownRender';
 import TechStackTabs from '../components/Until/Tabs/TechStackTabs';
-import TimelineElement from '../components/Until/TimelineElement';
-import Connector from '../components/Until/Connector';
 // import VerticalSideLabel from '../components/Until/VerticalSideLabel';
 
-import { HiLocationMarker } from "react-icons/hi";
 import IconBuilder from '../components/Until/IconBuilder';
-import { GlobelNumberStyle } from '../services/GlobalStyles';
 
-interface KeyValueMap {
-   key: String,
-   component: ReactNode,
-}
+// interface KeyValueMap {
+//    key: String,
+//    component: ReactNode,
+// }
 
 
 

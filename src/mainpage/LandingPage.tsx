@@ -4,8 +4,6 @@ import '../styles/Section Styles/SkillsSection.css'
 import '../styles/Section Styles/ProjectSection.css'
 import '../styles/component styles/MobileNavbar.css'
 
-import { Routes, Route} from "react-router-dom";
-
 import Greeting from '../components/Greeting'
 import Navbar from '../components/Navbar'
 import { tabList } from '../persistance_store/tabs'
@@ -15,28 +13,28 @@ import { social } from '../persistance_store/social'
 import { projectList } from '../persistance_store/projects'
 import { educationList } from '../persistance_store/eduation'
 import { workList } from '../persistance_store/work'
-import MobileNavbar from '../components/NavBars/MobileNavbar'
-import { IconeNavbuttonType } from '../models/models'
+// import MobileNavbar from '../components/NavBars/MobileNavbar'
+// import { IconeNavbuttonType } from '../models/models'
 import Logo from '../components/Logo'
 import WorkSection from '../sections_modules/WorkSection'
 import SkillsSection from '../sections_modules/SkillsSection'
 import ProjectsSection from '../sections_modules/ProjectsSection'
 import EducationSection from '../sections_modules/EducationSection'
-import MobileTabBar from '../components/Until/MobileTabBar'
+// import MobileTabBar from '../components/Until/MobileTabBar'
 
 
 
 function LandingPage() {
 
-  const NavbarItemsList: IconeNavbuttonType[] = ['Home', 'About', 'Projects', 'Skills', 'Work', 'Education']
+  // const NavbarItemsList: IconeNavbuttonType[] = ['Home', 'About', 'Projects', 'Skills', 'Work', 'Education']
 
   const [width, setWindowWidth] = useState(0);  
-  const [height, setWindowHeight] = useState(0);  
+  // const [height, setWindowHeight] = useState(0);  
   const updateDimensions = () => {
     const width = window.innerWidth;
-    const height = window.innerHeight;
+    // const height = window.innerHeight;
     setWindowWidth(width);
-    setWindowHeight(height);
+    // setWindowHeight(height);
   }
 
   // const observer = new IntersectionObserver((ent))

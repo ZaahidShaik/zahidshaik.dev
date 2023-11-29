@@ -47,39 +47,33 @@ export const skillsList: skillTypes[] = [
         stackTechnologies: [],
         subSection: [
             {
-                sectionName: 'Programming Languages',
+                sectionName: 'Programming',
                 sectionTechnologies: ['Java','Python'],
                 subSubSection: [],
             },
             {
-                sectionName: 'Frameworks',
-                sectionTechnologies: [],
-                subSubSection: [
-                    {
-                        sectionName: 'Development',
-                        sectionTechnologies: ['Spring Boot', 'Node.js', 'Kafka', 'NPM'],
-                        subSubSection: [],
-                    },
-                    {
-                        sectionName: 'Operations',
-                        sectionTechnologies: ['Docker', 'Kubernetes', 'Elasticsearch', 'Terraform', 'Jenkins' ],
-                        subSubSection: [],
-                    },
-                    {
-                        sectionName: 'API',
-                        sectionTechnologies: ['SOAP', 'REST', 'GraphQL', 'gRPC'],
-                        subSubSection: [],
-                    },
-                    {
-                        sectionName: 'Testing',
-                        sectionTechnologies: ['Junit', 'EasyMock'],
-                        subSubSection: [],
-                    },
-                ]
+                sectionName: 'Development',
+                sectionTechnologies: ['Spring Boot', 'Node.js', 'Kafka', 'NPM'],
+                subSubSection: [],
             },
             {
                 sectionName: 'Databases',
-                sectionTechnologies: ['MySQL','MongoDB', 'DynamoDb', 'Redis'],
+                sectionTechnologies: ['MySQL','MongoDB', 'DynamoDB', 'Redis'],
+                subSubSection: [],
+            },
+            {
+                sectionName: 'Operations',
+                sectionTechnologies: ['Docker', 'Kubernetes', 'Elasticsearch', 'Terraform', 'Jenkins' ],
+                subSubSection: [],
+            },
+            {
+                sectionName: 'API',
+                sectionTechnologies: ['SOAP', 'REST', 'GraphQL', 'gRPC'],
+                subSubSection: [],
+            },
+            {
+                sectionName: 'Testing',
+                sectionTechnologies: ['Junit', 'EasyMock'],
                 subSubSection: [],
             },
 
@@ -90,42 +84,85 @@ export const skillsList: skillTypes[] = [
         stackTechnologies: [],
         subSection: [
             {
-                sectionName: 'Programming Languages',
+                sectionName: 'Programming',
                 sectionTechnologies: ['TypeScript','JavaScript', 'HTML5', 'CSS'],
                 subSubSection: [],
             },
             {
-                sectionName: 'Frameworks',
-                sectionTechnologies: [],
-                subSubSection: [
-                    {
-                        sectionName: 'Development',
-                        sectionTechnologies: ['React', 'React Hooks', 'Angular', 'Redux', 'Webpack', 'Babel.js', 'Bootstrap', 'Material UI'],
-                        subSubSection: [],
-                    },
-                    {
-                        sectionName: 'API Communication',
-                        sectionTechnologies: ['Atom'],
-                        subSubSection: [],
-                    },
-                    {
-                        sectionName: 'Testing',
-                        sectionTechnologies: ['Jest.js', 'Enzyme'],
-                        subSubSection: [],
-                    },
-                ]
+                sectionName: 'Development',
+                sectionTechnologies: ['React', 'React Hooks', 'Angular', 'Redux', 'Webpack', 'Babel.js'],
+                subSubSection: [],
+            },
+            {
+                sectionName: 'UI Library',
+                sectionTechnologies: ['Bootstrap', 'Material UI'],
+                subSubSection: [],
+            },
+            {
+                sectionName: 'API',
+                sectionTechnologies: ['Atom'],
+                subSubSection: [],
+            },
+            {
+                sectionName: 'Testing',
+                sectionTechnologies: ['Jest.js', 'Enzyme'],
+                subSubSection: [],
             },
         ]
     },
     {
-        stackName: 'AWS Stack', 
-        stackTechnologies: ['Open Search','Lambda', 'CloudWatch', 'SQS', 'SNS', 'EC2', 'S3', ],
-        subSection: [],
+        stackName: 'AWS Services', 
+        stackTechnologies: [],
+        subSection: [
+            {
+                sectionName: 'ServerLess',
+                sectionTechnologies: ['Open Search','Lambda',],
+                subSubSection: [],
+            },
+            {
+                sectionName: 'Monitoring',
+                sectionTechnologies: ['CloudWatch'],
+                subSubSection: [],
+            },
+            {
+                sectionName: 'Message Queues',
+                sectionTechnologies: ['SQS', 'SNS'],
+                subSubSection: [],
+            },
+            {
+                sectionName: 'Compute',
+                sectionTechnologies: ['Amazon EC2'],
+                subSubSection: [],
+            },
+            {
+                sectionName: 'Storage',
+                sectionTechnologies: ['S3'],
+                subSubSection: [],
+            },
+
+
+        ],
     },
     {
-        stackName: 'Dev Stack', 
-        stackTechnologies: ['Git','GitHub', 'CI/CD', 'Agile', 'Bash'],
-        subSection: [],
+        stackName: 'Developer Tools', 
+        stackTechnologies: [],
+        subSection: [
+            {
+                sectionName: 'Version Control',
+                sectionTechnologies: ['Git','GitHub'],
+                subSubSection: [],
+            },
+            {
+                sectionName: 'Project Management',
+                sectionTechnologies: ['CI/CD', 'Agile'],
+                subSubSection: [],
+            },
+            {
+                sectionName: 'IDE',
+                sectionTechnologies: ['Bash', 'Intellij IDE', 'Visual Studio Code'],
+                subSubSection: [],
+            },
+        ],
     },
     
 ]  

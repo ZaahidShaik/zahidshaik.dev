@@ -1,13 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, HashRouter as Router } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import './index.css';
-// import App from './App';
 import reportWebVitals from './reportWebVitals';
-// import Greeting from './components/Greeting';
 import LandingPage from './mainpage/LandingPage';
-import ErrorPage from './components/Until/ErrorPage';
-import StyledEngineProvider from "@mui/material/StyledEngineProvider";
+// import ErrorPage from './components/Until/ErrorPage';
+// import StyledEngineProvider from "@mui/material/StyledEngineProvider";
 
 
 const root = ReactDOM.createRoot(
@@ -15,11 +13,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    {/* <Router> */}
     <BrowserRouter>
      <LandingPage/>
     </BrowserRouter>
-    {/* </Router> */}
   </React.StrictMode>
 );
 
