@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.6ec572c2.css",
-    "main.js": "/static/js/main.7908f6c2.js",
+    "main.css": "/static/css/main.28f5c779.css",
+    "main.js": "/static/js/main.75fd4086.js",
     "static/js/787.08deb14f.chunk.js": "/static/js/787.08deb14f.chunk.js",
     "static/media/ou_logo.png": "/static/media/ou_logo.c5c3f3a3b9f0d7143d15.png",
     "static/media/uhcl_logo.png": "/static/media/uhcl_logo.9c3abe352001705b6f86.png",
     "static/media/amazon_logo.png": "/static/media/amazon_logo.d1c04d4e0c1a93c16c6b.png",
     "static/media/bcn_logo.png": "/static/media/bcn_logo.caa727805419cee40673.png",
     "static/media/Amazon.md": "/static/media/Amazon.a8204984169fbcddef3a.md",
-    "static/media/BCM.md": "/static/media/BCM.474bc5948e4d2fb970fe.md",
     "index.html": "/index.html",
+    "static/media/BCM.md": "/static/media/BCM.474bc5948e4d2fb970fe.md",
     "static/media/Meraki.md": "/static/media/Meraki.31d6cfe0d16ae931b73c.md",
-    "main.6ec572c2.css.map": "/static/css/main.6ec572c2.css.map",
-    "main.7908f6c2.js.map": "/static/js/main.7908f6c2.js.map",
+    "main.28f5c779.css.map": "/static/css/main.28f5c779.css.map",
+    "main.75fd4086.js.map": "/static/js/main.75fd4086.js.map",
     "787.08deb14f.chunk.js.map": "/static/js/787.08deb14f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ec572c2.css",
-    "static/js/main.7908f6c2.js"
+    "static/css/main.28f5c779.css",
+    "static/js/main.75fd4086.js"
   ]
 }
